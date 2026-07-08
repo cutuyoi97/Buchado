@@ -41,14 +41,27 @@ if (window.matchMedia("(max-width: 920px)").matches === false) {
 }
 
 
-//Scroller Nav
-window.onscroll = function () {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        $("nav").addClass("fixed_nav");
-    } else {
-        $("nav").removeClass("fixed_nav");
+/*====================================================
+        NAVBAR
+====================================================*/
+
+const nav = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+
+    if(window.scrollY > 80){
+
+        nav.classList.add("fixed_nav");
+        nav.classList.add("nav-small");
+
+    }else{
+
+        nav.classList.remove("fixed_nav");
+        nav.classList.remove("nav-small");
+
     }
-}
+
+});
 
 
 //DETECT ESC KEY PRESSED

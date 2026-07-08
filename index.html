@@ -11,7 +11,7 @@
 <body>
     <!--SHORTCUT ICON
 <link rel="shortcut icon" href="assets/images/favicon.ico" />-->
-
+    <!--  -->
     <!--META TAGS
 <meta charset="UTF-8" />
 <meta name="language" content="ES" />
@@ -38,80 +38,168 @@
 
     <body>
 
-        <!--TOP MENU-->
-        <menu class="top_menu flex">
-            <section class="flex_content">
-                <a href="emailto:info@lilliovi.com">
-                    <i class="fa fa-envelope-o"></i>
-                    buchado@example.com
-                </a>
-                <a href="tel:1234567890">
-                    <i class="fa fa-headphones"></i>
-                    1234567890
-                </a>
-            </section>
-            <section class="flex_content">
-                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook">
+       <!--=========================================
+        BARRA DE PROGRESO
+==========================================-->
+<div class="scroll-progress">
+    <div class="scroll-progress-bar"></div>
+</div>
+
+<!--=========================================
+        NAVBAR
+==========================================-->
+<nav>
+
+    <!-- LOGO -->
+    <section class="flex_content">
+
+        <a href="index.html" class="logo fixed_flex">
+
+            <img src="images/Modelo web colegio-05.png" alt="Logo Colegio">
+
+            <figcaption>
+
+                <strong class="title">
+                    Buchado Colegio
+                </strong>
+
+                <span>Colegio Público</span>
+
+            </figcaption>
+
+        </a>
+
+    </section>
+
+    <!-- MENÚ -->
+    <section class="flex_content nav_content" id="nav_content">
+
+        <a href="index.html" class="active">
+            Inicio
+        </a>
+
+        <a href="nuestra_identidad.html">
+            Nuestra Identidad
+        </a>
+
+        <a href="eventos.html">
+            Eventos
+        </a>
+
+        <a href="about_us.html">
+            Sobre Nosotros
+        </a>
+
+        <a href="contactos.html" class="contact_btn">
+            Contáctanos
+        </a>
+
+    </section>
+
+    <!-- BOTÓN MENÚ -->
+    <section class="flex_content">
+
+        <a href="javascript:void(0)" class="ham">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </section>
+
+</nav>
+
+<!--=========================================
+        MENÚ MÓVIL
+==========================================-->
+
+<menu id="menu" class="side_menu">
+
+    <a href="javascript:void(0)" class="close">
+        <i class="fa fa-times"></i>
+    </a>
+
+    <div class="side-header">
+
+        <img src="images/Modelo web colegio-05.png" alt="Logo Colegio">
+
+        <h3>Buchado Colegio</h3>
+
+        <p>Colegio Público</p>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="index.html">
+                <i class="fa fa-home"></i>
+                Inicio
+            </a>
+        </li>
+
+        <li>
+            <a href="nuestra_identidad.html">
+                <i class="fa fa-university"></i>
+                Nuestra Identidad
+            </a>
+        </li>
+
+        <li>
+            <a href="eventos.html">
+                <i class="fa fa-calendar"></i>
+                Eventos
+            </a>
+        </li>
+
+        <li>
+            <a href="contactos.html">
+                <i class="fa fa-envelope"></i>
+                Contáctanos
+            </a>
+        </li>
+
+        <li>
+            <a href="about_us.html">
+                <i class="fa fa-users"></i>
+                Sobre Nosotros
+            </a>
+        </li>
+
+        <li class="dropdown">
+
+            <a href="javascript:void(0)">
+                <i class="fa fa-share-alt"></i>
+                Redes Sociales
+            </a>
+
+            <aside>
+
+                <a href="https://www.facebook.com">
                     <i class="fa fa-facebook"></i>
+                    Facebook
                 </a>
 
-                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram">
+                <a href="https://www.instagram.com">
                     <i class="fa fa-instagram"></i>
+                    Instagram
                 </a>
 
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter">
+                <a href="https://www.youtube.com">
+                    <i class="fa fa-youtube-play"></i>
+                    YouTube
+                </a>
+
+                <a href="https://twitter.com">
                     <i class="fa fa-twitter"></i>
+                    Twitter
                 </a>
 
-                <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" title="YouTube">
-                    <i class="fa fa-youtube"></i>
-                </a>
-            </section>
-        </menu>
+            </aside>
 
-        <!--NAV-->
-        <nav>
-            <section class="flex_content">
-                <figure class="logo fixed_flex">
-                    <img src="images/Modelo web colegio-05.png" alt="">
-                    <figcaption>
-                        <strong class="title">Buchado Colegio</strong> Colegio Publico
-                    </figcaption>
-                </figure>
-            </section>
-            <section class="flex_content nav_content" id="nav_content">
-                <a href="index.html" class="active">Inicio</a>
-                <a href="nuestra_identidad.html">Nuestra Identidad</a>
-                <a href="eventos.html">Eventos</a>
-                <a href="contactos.html" class="contact_btn">Contactanos</a>
-                <a href="about_us.html">Sobre Nosotros</a>
-            </section>
-            <section class="flex_content">
-                <a href="javascript:void(0)" class="ham"><i class="fa fa-bars"></i></a>
-            </section>
-        </nav>
+        </li>
 
-        <!--MENU-->
-        <menu id="menu" class="side_menu">
-            <a href="javascript:void(0)" class="close"><i class="fa fa-times"></i></a>
-            <strong class="fixed_flex logo"><img src="images/Modelo web colegio-05.png" alt="Summit"
-                    loading="lazy" /></strong>
-            <br>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="contactos.html">Contactanos</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)">Redes Sociales</a>
-                    <aside>
-                        <a href="https://www.instagram.com">Instagram</a>
-                        <a href="https://www.youtube.com">Youtube</a>
-                        <a href="https://www.facebook.com">Facebook</a>
-                        <a href="https://twitter.com">twitter</a>
-                    </aside>
-                </li>
-                <li><a href="about_us.html">About us</a></li>
-        </menu>
+    </ul>
+
+</menu>
 
 
         <!--HEADER agregar elemtnos a nuestra entidad-->
