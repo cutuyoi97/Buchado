@@ -3,46 +3,46 @@ var element;
 
 //Detect onclick event
 if (window.matchMedia("(max-width: 920px)").matches === false) {
-    $(".ham").on("click", function(){
+    $(".ham").on("click", function () {
         $(".side_menu").css("right", "0px");
-        $(".overlay").css("opacity","1");
-        $(".overlay").css("z-index","99");
+        $(".overlay").css("opacity", "1");
+        $(".overlay").css("z-index", "99");
     });
 
-    $(".close").on("click", function(){
-        $(".contact").css("top") >= "10%" ? $(".contact").hide().css("top","-100%").fadeOut('100') : $(".side_menu").css("right", "-500px");
-        $(".overlay").css("opacity","0");
-        $(".overlay").css("z-index","-1");
+    $(".close").on("click", function () {
+        $(".contact").css("top") >= "10%" ? $(".contact").hide().css("top", "-100%").fadeOut('100') : $(".side_menu").css("right", "-500px");
+        $(".overlay").css("opacity", "0");
+        $(".overlay").css("z-index", "-1");
     });
 
-    $(".overlay").on("click", function(){
-        $(".contact").css("top") >= "10%" ? $(".contact").hide().css("top","-100%").fadeOut('100') : $(".side_menu").css("right", "-500px");
-        $(".overlay").css("opacity","0");
-        $(".overlay").css("z-index","-1");
+    $(".overlay").on("click", function () {
+        $(".contact").css("top") >= "10%" ? $(".contact").hide().css("top", "-100%").fadeOut('100') : $(".side_menu").css("right", "-500px");
+        $(".overlay").css("opacity", "0");
+        $(".overlay").css("z-index", "-1");
     });
 } else {
-    $(".ham").on("click", function(){
+    $(".ham").on("click", function () {
         $(".side_menu").css("right", "0px");
-        $(".overlay").css("opacity","1");
-        $(".overlay").css("z-index","9");
+        $(".overlay").css("opacity", "1");
+        $(".overlay").css("z-index", "9");
     });
-    
-    $(".close").on("click", function(){
-        $(".contact").css("top") >= "10%" ? $(".contact").hide().css("top","-100%").fadeOut('100') : $(".side_menu").css("right", "-120%");
-        $(".overlay").css("opacity","0");
-        $(".overlay").css("z-index","-1");
+
+    $(".close").on("click", function () {
+        $(".contact").css("top") >= "10%" ? $(".contact").hide().css("top", "-100%").fadeOut('100') : $(".side_menu").css("right", "-120%");
+        $(".overlay").css("opacity", "0");
+        $(".overlay").css("z-index", "-1");
     });
-    
-    $(".overlay").on("click", function(){
-        $(".contact").css("top") >= "10%" ? $(".contact").hide().css("top","-100%").fadeOut('100') : $(".side_menu").css("right", "-120%");
-        $(".overlay").css("opacity","0");
-        $(".overlay").css("z-index","-1");
+
+    $(".overlay").on("click", function () {
+        $(".contact").css("top") >= "10%" ? $(".contact").hide().css("top", "-100%").fadeOut('100') : $(".side_menu").css("right", "-120%");
+        $(".overlay").css("opacity", "0");
+        $(".overlay").css("z-index", "-1");
     });
 }
 
 
 //Scroller Nav
-window.onscroll = function() {
+window.onscroll = function () {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         $("nav").addClass("fixed_nav");
     } else {
@@ -52,7 +52,7 @@ window.onscroll = function() {
 
 
 //DETECT ESC KEY PRESSED
-document.onkeydown = function(evt) {
+document.onkeydown = function (evt) {
     evt = evt || window.event;
     var isEscape = false;
     if ("key" in evt) {
@@ -61,10 +61,10 @@ document.onkeydown = function(evt) {
         isEscape = (evt.keyCode === 27);
     }
     if (isEscape) {
-        if ($(".overlay").css("opacity") == "1"){
-            $(".contact").css("top") >= "10%" ? $(".contact").hide().css("top","-100%").fadeOut('100') : $(".side_menu").css("right", "-120%");
-            $(".overlay").css("opacity","0");
-            $(".overlay").css("z-index","-1");
+        if ($(".overlay").css("opacity") == "1") {
+            $(".contact").css("top") >= "10%" ? $(".contact").hide().css("top", "-100%").fadeOut('100') : $(".side_menu").css("right", "-120%");
+            $(".overlay").css("opacity", "0");
+            $(".overlay").css("z-index", "-1");
         }
     }
 };
@@ -72,13 +72,13 @@ document.onkeydown = function(evt) {
 
 
 //Dropdown
-$(".dropdown").click(function(){
-    if ($(this).children("aside").is(":hidden")){
+$(".dropdown").click(function () {
+    if ($(this).children("aside").is(":hidden")) {
         $(this).children("aside").show("slow");
-        $(this).children("a").css("color","var(--white)");
+        $(this).children("a").css("color", "var(--white)");
     } else {
         $(this).children("aside").hide("slow");
-        $(this).children("a").css("color","var(--lite)");
+        $(this).children("a").css("color", "var(--lite)");
     }
 });
 
@@ -99,26 +99,30 @@ if (window.matchMedia("(max-width: 920px)").matches === false) {
     arrowmark = false;
 }
 
-$('.blog-slider').slick({
-    slidesToShow: slidestoshow,
-    slidesToScroll: 1,
-    dots: false,
-    arrows: arrowmark,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    infinite: true
-});
+if ($('.blog-slider').length) {
+    $('.blog-slider').slick({
+        slidesToShow: slidestoshow,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: arrowmark,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: true
+    });
+}
 
 
-$('.event-slider').slick({
-	slidesToShow: 1,
-	slidesToScroll: 1,
-	dots: false,
-	arrows: false,
-	autoplay: true,
-	autoplaySpeed: 4000,
-	infinite: true
-});
+if ($('.event-slider').length) {
+    $('.event-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: false,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        infinite: true
+    });
+}
 
 
 /***************************
@@ -126,9 +130,9 @@ $('.event-slider').slick({
 ****************************/
 
 document.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", function(e){
+    link.addEventListener("click", function (e) {
 
-        if(this.href && this.hostname === location.hostname){
+        if (this.href && this.hostname === location.hostname) {
 
             e.preventDefault();
 
@@ -253,11 +257,11 @@ function actualizarEventos() {
         ANIMACIÓN DE NÚMEROS
 ====================================================*/
 
-function actualizarNumero(elemento, nuevoValor){
+function actualizarNumero(elemento, nuevoValor) {
 
-    nuevoValor = String(nuevoValor).padStart(2,"0");
+    nuevoValor = String(nuevoValor).padStart(2, "0");
 
-    if(elemento.textContent !== nuevoValor){
+    if (elemento.textContent !== nuevoValor) {
 
         elemento.textContent = nuevoValor;
 
@@ -276,29 +280,42 @@ function actualizarNumero(elemento, nuevoValor){
         EJECUTAR
 ====================================================*/
 
-actualizarEventos();
-
-setInterval(actualizarEventos,1000);
-
-const eventos = [
-
-{
-titulo:"Inicio de clases",
-inicio:"2026-08-15 08:00",
-fin:"2026-08-15 17:00"
-},
-
-{
-titulo:"Semana Cultural",
-inicio:"2026-09-21 09:00",
-fin:"2026-09-25 16:00"
+if (eventCards.length > 0) {
+    actualizarEventos();
+    setInterval(actualizarEventos, 1000);
 }
 
-];
 
-if(d === 0){
+/*====================================================
+        GALERÍA DIVISIÓN 4
+====================================================*/
 
-    barra.style.background =
-    "linear-gradient(90deg,#ff0000,#ff9800)";
+const galleryItems = document.querySelectorAll(".gallery-item");
+
+if (galleryItems.length > 0) {
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("visible");
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.2
+    });
+
+    galleryItems.forEach((item, index) => {
+
+        item.style.transitionDelay = (index * 0.15) + "s";
+
+        observer.observe(item);
+
+    });
 
 }
