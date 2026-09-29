@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos — Buchado Colegio</title>
+    <meta name="description"
+        content="Consulta los próximos eventos académicos, culturales, deportivos e institucionales del Buchado Colegio, además de nuestra galería de momentos destacados.">
+    <link rel="canonical" href="/pages/eventos.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Eventos — Buchado Colegio">
+    <meta property="og:description" content="Próximos eventos y galería de nuestra comunidad educativa.">
+    <meta property="og:image" content="/assets/images/logo/logo-buchado.png">
+    <meta property="og:url" content="/pages/eventos.html">
+
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo-buchado.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Mukta:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/eventos.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+    <div class="scroll-progress" aria-hidden="true">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <header class="site-header">
+        <a href="/" class="logo">
+            <img src="/assets/images/logo/logo-buchado.png" alt="Escudo del Buchado Colegio" width="60" height="60">
+            <span class="logo-text">
+                <strong>Buchado Colegio</strong>
+                <span>Institución Educativa Oficial</span>
+            </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+            <a href="/">Inicio</a>
+            <a href="/pages/identidad.html">Nuestra Identidad</a>
+            <a href="/pages/eventos.html" aria-current="page">Eventos</a>
+            <a href="/pages/contacto.html" class="btn-contact">Contáctanos</a>
+        </nav>
+
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu"
+            aria-label="Abrir menú de navegación">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </header>
+
+    <nav id="mobileMenu" class="mobile-menu" aria-label="Menú móvil" aria-hidden="true">
+        <button type="button" class="mobile-menu-close" aria-label="Cerrar menú">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+
+        <div class="mobile-menu-header">
+            <img src="/assets/images/logo/logo-buchado.png" alt="" width="80" height="80">
+            <h2>Buchado Colegio</h2>
+            <p>Institución Educativa Oficial</p>
+        </div>
+
+        <ul>
+            <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
+            <li><a href="/pages/identidad.html"><i class="fa fa-university" aria-hidden="true"></i> Nuestra
+                    Identidad</a></li>
+            <li><a href="/pages/eventos.html" aria-current="page"><i class="fa fa-calendar" aria-hidden="true"></i>
+                    Eventos</a></li>
+            <li><a href="/pages/contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i> Contáctanos</a></li>
+            <li class="mobile-menu-dropdown" data-open="false">
+                <button type="button" aria-expanded="false">
+                    <span class="flex" style="gap:15px;align-items:center">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i> Redes sociales
+                    </span>
+                    <i class="fa fa-chevron-down chevron" aria-hidden="true"></i>
+                </button>
+                <div class="mobile-menu-dropdown-panel">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fa fa-facebook"
+                            aria-hidden="true"></i> Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fa fa-instagram"
+                            aria-hidden="true"></i> Instagram</a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener"><i class="fa fa-youtube-play"
+                            aria-hidden="true"></i> YouTube</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fa fa-twitter"
+                            aria-hidden="true"></i> Twitter</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="nav-overlay"></div>
+
+    <main id="main-content">
+        <!-- BANNER -->
+        <section class="events-banner">
+            <div class="container">
+                <span class="eyebrow" style="color:#ffb347">Eventos institucionales</span>
+                <h1>Vive cada experiencia junto a nuestra comunidad educativa</h1>
+                <p>Conoce los próximos eventos, actividades académicas, deportivas, culturales y las experiencias
+                    que hacen parte de la vida institucional.</p>
+            </div>
+        </section>
+
+        <!-- EVENTO DESTACADO -->
+        <section class="section">
+            <div class="container featured-event">
+                <div class="featured-event-image">
+                    <img src="/assets/images/institucional/estudiantes-1.png" alt="Estudiantes en el evento destacado">
+                </div>
+                <div class="featured-event-content">
+                    <span class="badge badge--institutional">Próximo evento</span>
+                    <h2>Semana Cultural 2026</h2>
+                    <p>Cinco días llenos de arte, música, danza, emprendimiento, ciencia y actividades recreativas
+                        para toda la comunidad educativa.</p>
+
+                    <div class="featured-event-meta">
+                        <span><i class="fa fa-calendar" aria-hidden="true"></i> 7 diciembre 2026</span>
+                        <span><i class="fa fa-clock-o" aria-hidden="true"></i> 8:00 a. m.</span>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i> Patio principal</span>
+                    </div>
+
+                    <div class="featured-countdown" data-date="2026-12-07T08:00:00">
+                        <div>
+                            <span class="days">00</span>
+                            <small>Días</small>
+                        </div>
+                        <div>
+                            <span class="hours">00</span>
+                            <small>Horas</small>
+                        </div>
+                        <div>
+                            <span class="minutes">00</span>
+                            <small>Min</small>
+                        </div>
+                        <div>
+                            <span class="seconds">00</span>
+                            <small>Seg</small>
+                        </div>
+                    </div>
+
+                    <a href="#events-grid" class="btn btn-primary">Más información</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FILTROS -->
+        <section class="section--tight">
+            <div class="container">
+                <div class="event-filters" role="group" aria-label="Filtrar eventos">
+                    <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">Todos</button>
+                    <button type="button" class="filter-btn" data-filter="proximo" aria-pressed="false">Próximos</button>
+                    <button type="button" class="filter-btn" data-filter="realizado" aria-pressed="false">Realizados</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- GRID DE EVENTOS -->
+        <section class="section--tight" id="events-grid">
+            <div class="container events-grid">
+                <article class="card event-card" data-category="proximo">
+                    <img src="/assets/images/institucional/estudiantes-1.png" alt="Estudiantes en el inicio de clases">
+                    <div class="event-card-body">
+                        <span class="badge badge--academic">Académico</span>
+                        <h3>Inicio de clases</h3>
+                        <p>Bienvenida oficial a los estudiantes para el nuevo año escolar.</p>
+                        <div class="event-meta">
+                            <span><i class="fa fa-calendar" aria-hidden="true"></i> 16 nov</span>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i> 8:00 a. m.</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card event-card" data-category="proximo">
+                    <img src="/assets/images/institucional/estudiantes-2.png" alt="Presentación cultural de estudiantes">
+                    <div class="event-card-body">
+                        <span class="badge badge--cultural">Cultural</span>
+                        <h3>Semana Cultural</h3>
+                        <p>Presentaciones artísticas, muestras culturales y deportivas.</p>
+                        <div class="event-meta">
+                            <span><i class="fa fa-calendar" aria-hidden="true"></i> 7 dic</span>
+                            <span><i class="fa fa-clock-o" aria-hidden="true"></i> 9:00 a. m.</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card event-card" data-category="realizado">
+                    <img src="/assets/images/institucional/nino-leyendo.png" alt="Estudiante participando en las olimpiadas">
+                    <div class="event-card-body">
+                        <span class="badge badge--sports">Deportes</span>
+                        <h3>Olimpiadas</h3>
+                        <p>Competencias deportivas entre los diferentes grados.</p>
+                        <div class="event-meta">
+                            <span><i class="fa fa-calendar" aria-hidden="true"></i> 18 jul</span>
+                            <span>Finalizado</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card event-card" data-category="realizado">
+                    <img src="/assets/images/logo/escudo-colegio.png" alt="Familias en el día de la familia">
+                    <div class="event-card-body">
+                        <span class="badge badge--important">Institucional</span>
+                        <h3>Día de la Familia</h3>
+                        <p>Integración entre estudiantes, padres de familia y docentes.</p>
+                        <div class="event-meta">
+                            <span><i class="fa fa-calendar" aria-hidden="true"></i> 10 may</span>
+                            <span>Finalizado</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- GALERÍA -->
+        <section class="section events-gallery">
+            <div class="container">
+                <div class="section-header section-header--accent">
+                    <h2>Galería de eventos</h2>
+                    <p>Revive algunos de nuestros mejores momentos.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <button type="button" data-gallery-item data-full="/assets/images/institucional/estudiantes-1.png"
+                        aria-label="Ver imagen ampliada: estudiantes en actividades escolares">
+                        <img src="/assets/images/institucional/estudiantes-1.png" alt="" loading="lazy">
+                    </button>
+                    <button type="button" data-gallery-item data-full="/assets/images/institucional/estudiantes-2.png"
+                        aria-label="Ver imagen ampliada: estudiantes en actividades culturales">
+                        <img src="/assets/images/institucional/estudiantes-2.png" alt="" loading="lazy">
+                    </button>
+                    <button type="button" data-gallery-item data-full="/assets/images/institucional/nino-leyendo.png"
+                        aria-label="Ver imagen ampliada: estudiante leyendo">
+                        <img src="/assets/images/institucional/nino-leyendo.png" alt="" loading="lazy">
+                    </button>
+                    <button type="button" data-gallery-item data-full="/assets/images/logo/escudo-colegio.png"
+                        aria-label="Ver imagen ampliada: escudo institucional">
+                        <img src="/assets/images/logo/escudo-colegio.png" alt="" loading="lazy">
+                    </button>
+                    <button type="button" data-gallery-item data-full="/assets/images/institucional/estudiantes-1.png"
+                        aria-label="Ver imagen ampliada: estudiantes en el patio">
+                        <img src="/assets/images/institucional/estudiantes-1.png" alt="" loading="lazy">
+                    </button>
+                    <button type="button" data-gallery-item data-full="/assets/images/institucional/estudiantes-2.png"
+                        aria-label="Ver imagen ampliada: estudiantes en clase">
+                        <img src="/assets/images/institucional/estudiantes-2.png" alt="" loading="lazy">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOTICIAS -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header section-header--accent">
+                    <span class="eyebrow">Novedades</span>
+                    <h2>Noticias relacionadas</h2>
+                    <p>Mantente informado sobre las actividades más recientes de nuestra institución.</p>
+                </div>
+
+                <div class="news-grid">
+                    <a href="#" class="card news-card">
+                        <figure>
+                            <img src="/assets/images/institucional/estudiantes-1.png" alt="" loading="lazy">
+                            <span class="news-card-overlay"><span>Leer más →</span></span>
+                        </figure>
+                        <div class="news-card-body">
+                            <span class="badge badge--academic">Académico</span>
+                            <h3>Inicio de matrículas 2027</h3>
+                            <p>Ya están abiertas las matrículas para el próximo año escolar.</p>
+                            <div class="news-card-footer">
+                                <span>1 julio 2026</span>
+                                <span>2 min</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card news-card">
+                        <figure>
+                            <img src="/assets/images/institucional/estudiantes-2.png" alt="" loading="lazy">
+                            <span class="news-card-overlay"><span>Leer más →</span></span>
+                        </figure>
+                        <div class="news-card-body">
+                            <span class="badge badge--institutional">Eventos</span>
+                            <h3>Semana Cultural</h3>
+                            <p>Música, danza, teatro y actividades para toda la comunidad educativa.</p>
+                            <div class="news-card-footer">
+                                <span>4 julio 2026</span>
+                                <span>3 min</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card news-card">
+                        <figure>
+                            <img src="/assets/images/institucional/nino-leyendo.png" alt="" loading="lazy">
+                            <span class="news-card-overlay"><span>Leer más →</span></span>
+                        </figure>
+                        <div class="news-card-body">
+                            <span class="badge badge--sports">Deportes</span>
+                            <h3>Olimpiadas Deportivas</h3>
+                            <p>Nuestros estudiantes participarán en las olimpiadas municipales.</p>
+                            <div class="news-card-footer">
+                                <span>6 julio 2026</span>
+                                <span>4 min</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card news-card">
+                        <figure>
+                            <img src="/assets/images/logo/escudo-colegio.png" alt="" loading="lazy">
+                            <span class="news-card-overlay"><span>Leer más →</span></span>
+                        </figure>
+                        <div class="news-card-body">
+                            <span class="badge badge--important">Importante</span>
+                            <h3>Reconocimiento institucional</h3>
+                            <p>Nuestra institución recibió un reconocimiento por su excelencia académica.</p>
+                            <div class="news-card-footer">
+                                <span>8 julio 2026</span>
+                                <span>5 min</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="galleryLightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada" hidden>
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Cerrar imagen">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <img id="lightboxImage" src="" alt="">
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <figure>
+                <img src="/assets/images/logo/logo-buchado.png" alt="" width="150" height="150" loading="lazy">
+            </figure>
+            <div>
+                <h2>Buchado Colegio</h2>
+                <p>Formando ciudadanos con valores, conocimiento y compromiso desde nuestra comunidad educativa.</p>
+                <div class="footer-links">
+                    <a href="/pages/eventos.html"><i class="fa fa-calendar" aria-hidden="true"></i> Calendario de
+                        eventos</a>
+                    <a href="/pages/contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i> PQRS y
+                        contacto</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-body">
+            <section>
+                <div class="logo">
+                    <img src="/assets/images/logo/logo-buchado.png" alt="" width="60" height="60"
+                        style="border-radius:50%">
+                    <span class="logo-text">
+                        <strong>Buchado Colegio</strong>
+                        <span>Institución Educativa Oficial</span>
+                    </span>
+                </div>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Dirección de la institución (por definir)</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> (604) 123 4567</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> contacto@buchado.edu.co</p>
+                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Lunes a viernes · 7:00 a. m. – 4:00 p. m.</p>
+            </section>
+
+            <section>
+                <h3>Enlaces institucionales</h3>
+                <a href="#">Proyecto Educativo Institucional (PEI)</a>
+                <a href="#">Manual de convivencia</a>
+                <a href="#">Sistema de matrículas</a>
+                <a href="#">Calendario académico</a>
+                <a href="#">Gobierno escolar</a>
+            </section>
+
+            <section>
+                <h3>Documentos institucionales</h3>
+                <p style="opacity:.7">Próximamente disponibles para descarga.</p>
+                <a href="#">PQRS</a>
+                <a href="#">Transparencia</a>
+                <a href="/pages/eventos.html">Noticias y eventos</a>
+                <a href="/pages/contacto.html">Contáctanos</a>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Buchado Colegio. Todos los derechos reservados.</p>
+            <div class="footer-legal">
+                <a href="#">Aviso de privacidad</a>
+                <a href="#">Términos de uso</a>
+                <a href="#">Mapa del sitio</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i
+                        class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i
+                        class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i
+                        class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="/pages/contacto.html" aria-label="Contacto"><i class="fa fa-envelope"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/navigation.js"></script>
+    <script type="module" src="/js/events.js"></script>
+</body>
+
+</html>

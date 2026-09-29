@@ -1,0 +1,288 @@
+/*==================================================
+    EVENTOS
+==================================================*/
+
+.events-banner {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    background:
+        linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .68)),
+        url("/assets/images/institucional/estudiantes-2.png") center/cover no-repeat;
+}
+
+.events-banner .container {
+    max-width: 900px;
+}
+
+.events-banner h1 {
+    color: #fff;
+    margin: var(--space-2) 0;
+}
+
+.events-banner p {
+    color: rgba(255, 255, 255, .9);
+    font-size: 1.05rem;
+}
+
+/*----- Evento destacado -----*/
+
+.featured-event {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.featured-event-image {
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+}
+
+.featured-event-image img {
+    width: 100%;
+    transition: .6s;
+}
+
+.featured-event-image:hover img {
+    transform: scale(1.06);
+}
+
+.featured-event-content h2 {
+    margin-bottom: var(--space-2);
+}
+
+.featured-event-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin: var(--space-3) 0;
+}
+
+.featured-event-meta span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #444;
+    font-size: .95rem;
+}
+
+.featured-event-meta i {
+    color: var(--color-accent);
+}
+
+.featured-countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin: var(--space-3) 0;
+}
+
+.featured-countdown > div {
+    background: #fff;
+    padding: 20px;
+    border-radius: var(--radius-md);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.featured-countdown span {
+    display: block;
+    font-size: 1.9rem;
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+.featured-countdown small {
+    color: var(--color-text-muted);
+}
+
+@media (max-width: 960px) {
+    .featured-event {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .featured-countdown {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*----- Filtros -----*/
+
+.event-filters {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 12px 26px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-full);
+    background: #fff;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.filter-btn:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+.filter-btn[aria-pressed="true"] {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: #fff;
+}
+
+@media (max-width: 640px) {
+    .filter-btn {
+        flex: 1 1 40%;
+    }
+}
+
+/*----- Grid de eventos -----*/
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.event-card {
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity .6s ease, transform .6s ease, box-shadow .35s;
+}
+
+.event-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.event-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    transition: transform .6s;
+}
+
+.event-card:hover img {
+    transform: scale(1.06);
+}
+
+.event-card-body {
+    padding: 28px;
+}
+
+.event-card-body h3 {
+    margin: 16px 0;
+}
+
+.event-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: var(--color-text-muted);
+    font-size: .9rem;
+}
+
+@media (max-width: 860px) {
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*----- Galería + lightbox -----*/
+
+.events-gallery {
+    background: var(--color-surface);
+}
+
+.gallery-grid {
+    margin-top: var(--space-6);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.gallery-grid button {
+    padding: 0;
+    border: 0;
+    background: none;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: transform .45s;
+}
+
+.gallery-grid button:hover img {
+    transform: scale(1.06);
+}
+
+@media (max-width: 860px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.lightbox[hidden] {
+    display: none;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-lg);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .3);
+    background: rgba(255, 255, 255, .1);
+    color: #fff;
+    font-size: 1.4rem;
+    transition: .3s;
+}
+
+.lightbox-close:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+}

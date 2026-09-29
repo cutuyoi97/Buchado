@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos — Buchado Colegio</title>
+    <meta name="description"
+        content="Comunícate con el Buchado Colegio para consultas de matrículas, procesos académicos o información institucional. Te responderemos lo antes posible.">
+    <link rel="canonical" href="/pages/contacto.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contáctanos — Buchado Colegio">
+    <meta property="og:description" content="Escríbenos y con gusto resolveremos tus dudas.">
+    <meta property="og:image" content="/assets/images/logo/logo-buchado.png">
+    <meta property="og:url" content="/pages/contacto.html">
+
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo-buchado.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Mukta:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+    <div class="scroll-progress" aria-hidden="true">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <header class="site-header">
+        <a href="/" class="logo">
+            <img src="/assets/images/logo/logo-buchado.png" alt="Escudo del Buchado Colegio" width="60" height="60">
+            <span class="logo-text">
+                <strong>Buchado Colegio</strong>
+                <span>Institución Educativa Oficial</span>
+            </span>
+        </a>
+
+        <nav class="nav-links" aria-label="Navegación principal">
+            <a href="/">Inicio</a>
+            <a href="/pages/identidad.html">Nuestra Identidad</a>
+            <a href="/pages/eventos.html">Eventos</a>
+            <a href="/pages/contacto.html" class="btn-contact" aria-current="page">Contáctanos</a>
+        </nav>
+
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="mobileMenu"
+            aria-label="Abrir menú de navegación">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+    </header>
+
+    <nav id="mobileMenu" class="mobile-menu" aria-label="Menú móvil" aria-hidden="true">
+        <button type="button" class="mobile-menu-close" aria-label="Cerrar menú">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+
+        <div class="mobile-menu-header">
+            <img src="/assets/images/logo/logo-buchado.png" alt="" width="80" height="80">
+            <h2>Buchado Colegio</h2>
+            <p>Institución Educativa Oficial</p>
+        </div>
+
+        <ul>
+            <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></li>
+            <li><a href="/pages/identidad.html"><i class="fa fa-university" aria-hidden="true"></i> Nuestra
+                    Identidad</a></li>
+            <li><a href="/pages/eventos.html"><i class="fa fa-calendar" aria-hidden="true"></i> Eventos</a></li>
+            <li><a href="/pages/contacto.html" aria-current="page"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    Contáctanos</a></li>
+            <li class="mobile-menu-dropdown" data-open="false">
+                <button type="button" aria-expanded="false">
+                    <span class="flex" style="gap:15px;align-items:center">
+                        <i class="fa fa-share-alt" aria-hidden="true"></i> Redes sociales
+                    </span>
+                    <i class="fa fa-chevron-down chevron" aria-hidden="true"></i>
+                </button>
+                <div class="mobile-menu-dropdown-panel">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener"><i class="fa fa-facebook"
+                            aria-hidden="true"></i> Facebook</a>
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener"><i class="fa fa-instagram"
+                            aria-hidden="true"></i> Instagram</a>
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener"><i class="fa fa-youtube-play"
+                            aria-hidden="true"></i> YouTube</a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fa fa-twitter"
+                            aria-hidden="true"></i> Twitter</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="nav-overlay"></div>
+
+    <main id="main-content">
+        <section class="contact-hero">
+            <div class="contact-hero-text">
+                <span class="eyebrow">Contáctanos</span>
+                <h1>Un espacio dedicado a la formación integral de niños y jóvenes</h1>
+                <p>Envíanos un mensaje y daremos respuesta a tu pregunta lo más pronto posible.</p>
+                <p class="contact-phone">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    (604) 123 4567
+                </p>
+            </div>
+        </section>
+
+        <div class="container contact-layout">
+            <div class="card contact-form-card">
+                <h2 class="sr-only">Formulario de contacto</h2>
+                <form id="contactForm" novalidate>
+                    <div class="form-field">
+                        <label for="name">Nombre completo</label>
+                        <div class="input-icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required
+                                maxlength="100" autocomplete="name">
+                        </div>
+                        <span class="field-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Correo electrónico</label>
+                        <div class="input-icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required
+                                maxlength="200" autocomplete="email">
+                        </div>
+                        <span class="field-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="subject">Asunto</label>
+                        <div class="input-icon">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <input type="text" id="subject" name="subject" placeholder="¿En qué podemos ayudarte?"
+                                required maxlength="150">
+                        </div>
+                        <span class="field-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Mensaje</label>
+                        <div class="input-icon input-icon-textarea">
+                            <i class="fa fa-comment" aria-hidden="true"></i>
+                            <textarea id="message" name="message" placeholder="Escribe tu mensaje" required
+                                maxlength="2000"></textarea>
+                        </div>
+                        <span class="field-error" role="alert"></span>
+                    </div>
+
+                    <!-- Honeypot anti-spam: oculto para personas, visible para bots -->
+                    <input type="text" name="company" id="company" class="hp-field" tabindex="-1" autocomplete="off"
+                        aria-hidden="true">
+
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <span class="btn-text">Enviar mensaje</span>
+                        <span class="btn-spinner" hidden></span>
+                    </button>
+
+                    <div class="form-status" id="formStatus" role="status" aria-live="polite" hidden></div>
+
+                    <p class="contact-privacy-note">
+                        Buchado Colegio utiliza la información suministrada para brindar información relevante de
+                        la institución. Revisa nuestra
+                        <a href="#">política de privacidad</a>.
+                    </p>
+                </form>
+            </div>
+
+            <div class="contact-info-list">
+                <div class="card contact-card">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h3>Secretaría</h3>
+                        <p>secretaria@buchado.edu.co</p>
+                        <small>Atención administrativa y matrículas.</small>
+                    </div>
+                </div>
+
+                <div class="card contact-card">
+                    <div class="contact-icon">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h3>Coordinación</h3>
+                        <p>coordinacion@buchado.edu.co</p>
+                        <small>Casos académicos y convivencia.</small>
+                    </div>
+                </div>
+
+                <div class="card contact-card">
+                    <div class="contact-icon">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h3>Rectoría</h3>
+                        <p>rectoria@buchado.edu.co</p>
+                        <small>Solicitudes institucionales.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section"></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <figure>
+                <img src="/assets/images/logo/logo-buchado.png" alt="" width="150" height="150" loading="lazy">
+            </figure>
+            <div>
+                <h2>Buchado Colegio</h2>
+                <p>Formando ciudadanos con valores, conocimiento y compromiso desde nuestra comunidad educativa.</p>
+                <div class="footer-links">
+                    <a href="/pages/eventos.html"><i class="fa fa-calendar" aria-hidden="true"></i> Calendario de
+                        eventos</a>
+                    <a href="/pages/contacto.html"><i class="fa fa-envelope" aria-hidden="true"></i> PQRS y
+                        contacto</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-body">
+            <section>
+                <div class="logo">
+                    <img src="/assets/images/logo/logo-buchado.png" alt="" width="60" height="60"
+                        style="border-radius:50%">
+                    <span class="logo-text">
+                        <strong>Buchado Colegio</strong>
+                        <span>Institución Educativa Oficial</span>
+                    </span>
+                </div>
+                <p><i class="fa fa-map-marker" aria-hidden="true"></i> Dirección de la institución (por definir)</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> (604) 123 4567</p>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> contacto@buchado.edu.co</p>
+                <p><i class="fa fa-clock-o" aria-hidden="true"></i> Lunes a viernes · 7:00 a. m. – 4:00 p. m.</p>
+            </section>
+
+            <section>
+                <h3>Enlaces institucionales</h3>
+                <a href="#">Proyecto Educativo Institucional (PEI)</a>
+                <a href="#">Manual de convivencia</a>
+                <a href="#">Sistema de matrículas</a>
+                <a href="#">Calendario académico</a>
+                <a href="#">Gobierno escolar</a>
+            </section>
+
+            <section>
+                <h3>Documentos institucionales</h3>
+                <p style="opacity:.7">Próximamente disponibles para descarga.</p>
+                <a href="#">PQRS</a>
+                <a href="#">Transparencia</a>
+                <a href="/pages/eventos.html">Noticias y eventos</a>
+                <a href="/pages/contacto.html">Contáctanos</a>
+            </section>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Buchado Colegio. Todos los derechos reservados.</p>
+            <div class="footer-legal">
+                <a href="#">Aviso de privacidad</a>
+                <a href="#">Términos de uso</a>
+                <a href="#">Mapa del sitio</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i
+                        class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i
+                        class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i
+                        class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                <a href="/pages/contacto.html" aria-label="Contacto"><i class="fa fa-envelope"
+                        aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/navigation.js"></script>
+    <script src="/js/contact.js"></script>
+</body>
+
+</html>

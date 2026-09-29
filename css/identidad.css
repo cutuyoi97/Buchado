@@ -1,0 +1,428 @@
+/*==================================================
+    NUESTRA IDENTIDAD
+==================================================*/
+
+.identity-banner {
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background:
+        linear-gradient(rgba(0, 35, 71, .8), rgba(0, 35, 71, .8)),
+        url("/assets/images/institucional/nino-leyendo.png") center/cover;
+}
+
+.identity-banner .container {
+    max-width: 850px;
+}
+
+.identity-banner h1 {
+    color: #fff;
+    margin-bottom: var(--space-2);
+}
+
+.identity-banner p {
+    color: #eee;
+    font-size: 1.05rem;
+}
+
+/*----- Historia + timeline -----*/
+
+.history {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.history figure {
+    flex: 1;
+}
+
+.history figure img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.history-content {
+    flex: 1;
+}
+
+.timeline {
+    margin-top: var(--space-4);
+    border-left: 3px solid var(--color-border);
+    padding-left: var(--space-3);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: var(--space-3);
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: calc(-1 * var(--space-3) - 8px);
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+.timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.timeline-year {
+    display: inline-block;
+    font-weight: 700;
+    color: var(--color-accent);
+    margin-bottom: 4px;
+}
+
+.timeline-item p {
+    margin: 0;
+}
+
+@media (max-width: 860px) {
+    .history {
+        flex-direction: column;
+    }
+}
+
+/*----- Misión / Visión -----*/
+
+.mission-vision {
+    background: var(--color-surface);
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: var(--space-6);
+}
+
+.info-card {
+    padding: 42px;
+    text-align: center;
+}
+
+.info-card i {
+    font-size: 50px;
+    color: var(--color-accent);
+    margin-bottom: 18px;
+}
+
+.info-card h3 {
+    margin-bottom: 16px;
+}
+
+.info-card p {
+    margin: 0;
+}
+
+@media (max-width: 860px) {
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*----- Modelo educativo -----*/
+
+.model-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: var(--space-6);
+}
+
+.model-card {
+    padding: 36px 28px;
+    text-align: center;
+}
+
+.model-card i {
+    font-size: 38px;
+    color: var(--color-accent);
+    margin-bottom: 14px;
+}
+
+.model-card h3 {
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+.model-card p {
+    margin: 0;
+    font-size: .92rem;
+}
+
+@media (max-width: 860px) {
+    .model-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*----- Principios y valores (acordeón) -----*/
+
+.values-grid {
+    margin-top: var(--space-6);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.value-item {
+    overflow: hidden;
+}
+
+.value-item.is-active {
+    background: var(--color-accent);
+}
+
+.value-trigger {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 30px;
+    background: transparent;
+    border: 0;
+    text-align: left;
+}
+
+.value-trigger i:first-child {
+    font-size: 34px;
+    color: var(--color-accent);
+    transition: .3s;
+}
+
+.value-trigger h3 {
+    flex: 1;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.value-trigger .chevron {
+    color: #999;
+    transition: transform .35s;
+}
+
+.value-item.is-active .value-trigger .chevron {
+    transform: rotate(180deg);
+    color: #fff;
+}
+
+.value-item.is-active .value-trigger h3,
+.value-item.is-active .value-trigger i:first-child {
+    color: #fff;
+}
+
+.value-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .45s ease;
+}
+
+.value-item.is-active .value-panel {
+    max-height: 320px;
+}
+
+.value-panel p {
+    margin: 0;
+    padding: 0 30px 30px;
+    font-size: .95rem;
+}
+
+.value-item.is-active .value-panel p {
+    color: #fff;
+}
+
+@media (max-width: 960px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*----- Estadísticas -----*/
+
+.stats {
+    background: var(--color-primary);
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: var(--space-8) var(--space-2);
+}
+
+.stats article h2 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+
+.stats article span {
+    color: #ddd;
+    font-size: .95rem;
+}
+
+@media (max-width: 720px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+/*----- Compromiso -----*/
+
+.commitment {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.commitment figure {
+    flex: 1;
+}
+
+.commitment figure img {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+.commitment-content {
+    flex: 1;
+}
+
+@media (max-width: 860px) {
+    .commitment {
+        flex-direction: column-reverse;
+    }
+}
+
+/*----- Frase -----*/
+
+.quote-section {
+    background: var(--color-surface);
+    text-align: center;
+}
+
+.quote-section blockquote {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.9rem;
+    font-style: italic;
+    color: var(--color-primary);
+    line-height: 1.7;
+}
+
+@media (max-width: 720px) {
+    .quote-section blockquote {
+        font-size: 1.3rem;
+    }
+}
+
+/*----- Mensaje del rector -----*/
+
+.rector-card {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rector-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background: var(--color-accent);
+}
+
+.rector-photo {
+    flex: 0 0 240px;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 8px solid #fff;
+    box-shadow: var(--shadow-lg);
+}
+
+.rector-photo img,
+.rector-photo.photo-placeholder {
+    width: 100%;
+    height: 100%;
+}
+
+.rector-content {
+    flex: 1;
+}
+
+.rector-content h2 {
+    margin: 12px 0 20px;
+}
+
+.rector-signature {
+    margin-top: var(--space-3);
+    border-top: 1px solid var(--color-border);
+    padding-top: 18px;
+}
+
+.rector-signature h4 {
+    margin: 0;
+    color: var(--color-primary);
+}
+
+.rector-signature span {
+    color: var(--color-accent);
+}
+
+@media (max-width: 860px) {
+    .rector-card {
+        flex-direction: column;
+        padding: 32px;
+        text-align: center;
+    }
+
+    .rector-photo {
+        margin: 0 auto;
+    }
+}
+
+/*----- Reveal-on-scroll -----*/
+
+.reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 720px) {
+    .identity-banner {
+        min-height: 50vh;
+    }
+}
