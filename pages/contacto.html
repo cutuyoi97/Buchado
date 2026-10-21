@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos — Institución Educativa Buchadó Fernando Botero Angulo</title>
+    <meta name="description"
+        content="Comunícate con la Institución Educativa Buchadó Fernando Botero Angulo: formulario de contacto, canales institucionales y dependencias de apoyo. Te responderemos lo antes posible.">
+    <link rel="canonical" href="/pages/contacto.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Contáctanos — Institución Educativa Buchadó Fernando Botero Angulo">
+    <meta property="og:description" content="Escríbenos y con gusto resolveremos tus dudas.">
+    <meta property="og:image" content="/assets/images/logo/logo-buchado.png">
+    <meta property="og:url" content="/pages/contacto.html">
+
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo-buchado.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Mukta:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+</head>
+
+<body>
+    <script>window.CURRENT_PAGE = "contacto";</script>
+    <div id="site-header-mount"></div>
+    <div id="mobile-nav-mount"></div>
+
+    <main id="main-content">
+        <section class="contact-hero">
+            <div class="container">
+                <div class="contact-hero-text">
+                    <span class="eyebrow">Contáctanos</span>
+                    <h1>Un espacio dedicado a la formación integral de niños y jóvenes</h1>
+                    <p>Envíanos un mensaje y daremos respuesta a tu pregunta lo más pronto posible.</p>
+                    <p class="contact-phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        (604) 123 4567
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="container contact-layout" id="formulario">
+            <div class="card contact-form-card">
+                <h2 class="sr-only">Formulario de contacto</h2>
+                <form id="contactForm" novalidate>
+                    <div class="form-field">
+                        <label for="name">Nombre completo</label>
+                        <div class="input-icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" id="name" name="name" placeholder="Tu nombre completo" required
+                                maxlength="100" autocomplete="name">
+                        </div>
+                        <span class="field-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">Correo electrónico</label>
+                        <div class="input-icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="email" id="email" name="email" placeholder="tu@correo.com" required
+                                maxlength="200" autocomplete="email">
+                        </div>
+                        <span class="field-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="subject">Asunto</label>
+                        <div class="input-icon">
+                            <i class="fa fa-tag" aria-hidden="true"></i>
+                            <input type="text" id="subject" name="subject" placeholder="¿En qué podemos ayudarte?"
+                                required maxlength="150">
+                        </div>
+                        <span class="field-error" role="alert"></span>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Mensaje</label>
+                        <div class="input-icon input-icon-textarea">
+                            <i class="fa fa-comment" aria-hidden="true"></i>
+                            <textarea id="message" name="message" placeholder="Escribe tu mensaje" required
+                                maxlength="2000"></textarea>
+                        </div>
+                        <span class="field-error" role="alert"></span>
+                    </div>
+
+                    <!-- Honeypot anti-spam: oculto para personas, visible para bots -->
+                    <input type="text" name="company" id="company" class="hp-field" tabindex="-1" autocomplete="off"
+                        aria-hidden="true">
+
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <span class="btn-text">Enviar mensaje</span>
+                        <span class="btn-spinner" hidden></span>
+                    </button>
+
+                    <div class="form-status" id="formStatus" role="status" aria-live="polite" hidden></div>
+
+                    <p class="contact-privacy-note">
+                        La Institución Educativa Buchadó Fernando Botero Angulo utiliza la información
+                        suministrada para brindar información relevante de la institución. Revisa nuestra
+                        <a href="#">política de privacidad</a>.
+                    </p>
+                </form>
+            </div>
+
+            <div class="contact-info-list" id="canales">
+                <div class="card contact-card">
+                    <div class="contact-icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h3>Secretaría</h3>
+                        <p>secretaria@buchado.edu.co</p>
+                        <small>Atención administrativa y matrículas.</small>
+                    </div>
+                </div>
+
+                <div class="card contact-card">
+                    <div class="contact-icon">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h3>Coordinación</h3>
+                        <p>coordinacion@buchado.edu.co</p>
+                        <small>Casos académicos y convivencia.</small>
+                    </div>
+                </div>
+
+                <div class="card contact-card">
+                    <div class="contact-icon">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <h3>Rectoría</h3>
+                        <p>rectoria@buchado.edu.co</p>
+                        <small>Solicitudes institucionales.</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DEPENDENCIAS Y PERSONAL DE APOYO -->
+        <section class="section" id="dependencias" style="background:var(--color-surface)">
+            <div class="container">
+                <div class="section-header section-header--accent">
+                    <span class="eyebrow">Comunidad educativa</span>
+                    <h2>Dependencias y personal de apoyo</h2>
+                    <p>Áreas de apoyo que acompañan el funcionamiento diario de la institución. Para contactarlas,
+                        utiliza el formulario o los canales generales mientras se confirman sus datos directos de
+                        contacto.</p>
+                </div>
+
+                <div class="departments-grid">
+                    <article class="card department-card">
+                        <div class="department-icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></div>
+                        <h3>Auxiliares administrativos</h3>
+                        <p>Apoyo en gestión documental, matrículas y trámites administrativos.</p>
+                    </article>
+
+                    <article class="card department-card">
+                        <div class="department-icon"><i class="fa fa-book" aria-hidden="true"></i></div>
+                        <h3>Biblioteca</h3>
+                        <p>Préstamo de material bibliográfico y espacios de lectura para la comunidad educativa.</p>
+                    </article>
+
+                    <article class="card department-card">
+                        <div class="department-icon"><i class="fa fa-wrench" aria-hidden="true"></i></div>
+                        <h3>Servicios generales</h3>
+                        <p>Mantenimiento y soporte logístico de la planta física institucional.</p>
+                    </article>
+
+                    <article class="card department-card">
+                        <div class="department-icon"><i class="fa fa-sun-o" aria-hidden="true"></i></div>
+                        <h3>Personal de aseo</h3>
+                        <p>Aseo y cuidado de los espacios institucionales para toda la comunidad educativa.</p>
+                    </article>
+
+                    <article class="card department-card">
+                        <div class="department-icon"><i class="fa fa-heart-o" aria-hidden="true"></i></div>
+                        <h3>Docente orientadora</h3>
+                        <p>Acompañamiento psicosocial a estudiantes y orientación a familias.</p>
+                    </article>
+                </div>
+
+                <p class="departments-note">
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    Los correos y teléfonos directos de cada dependencia se publicarán tan pronto la institución
+                    los confirme.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer-mount"></div>
+
+    <script src="/js/layout.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/contact.js"></script>
+</body>
+
+</html>

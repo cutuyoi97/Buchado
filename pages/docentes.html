@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Docente — Institución Educativa Buchadó Fernando Botero Angulo</title>
+    <meta name="description"
+        content="Consulta el personal docente de la Institución Educativa Buchadó Fernando Botero Angulo, organizado por sede educativa y área académica.">
+    <link rel="canonical" href="/pages/docentes.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Personal Docente — Institución Educativa Buchadó Fernando Botero Angulo">
+    <meta property="og:description" content="Personal docente organizado por sede y área académica.">
+    <meta property="og:image" content="/assets/images/logo/logo-buchado.png">
+    <meta property="og:url" content="/pages/docentes.html">
+
+    <link rel="icon" type="image/png" href="/assets/images/logo/logo-buchado.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Mukta:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/components.css">
+    <link rel="stylesheet" href="/css/docentes.css">
+</head>
+
+<body>
+    <script>window.CURRENT_PAGE = "docentes";</script>
+    <div id="site-header-mount"></div>
+    <div id="mobile-nav-mount"></div>
+
+    <main id="main-content">
+        <section class="teachers-banner">
+            <div class="container">
+                <span class="eyebrow" style="color:#bdf0d3">Comunidad educativa</span>
+                <h1>Personal Docente</h1>
+                <p>Conoce a los docentes de nuestra institución, organizados por sede educativa y área académica.</p>
+            </div>
+        </section>
+
+        <section class="section--tight">
+            <div class="container">
+                <div class="teachers-filters" role="group" aria-label="Filtrar personal docente">
+                    <div class="filter-group">
+                        <span class="filter-group-label">Sede:</span>
+                        <button type="button" class="sede-filter-btn" data-sede-filter="all" aria-pressed="true">Todas</button>
+                        <button type="button" class="sede-filter-btn" data-sede-filter="principal" aria-pressed="false">Sede Principal</button>
+                        <button type="button" class="sede-filter-btn" data-sede-filter="san-miguel" aria-pressed="false">Sede San Miguel</button>
+                        <button type="button" class="sede-filter-btn" data-sede-filter="arenal" aria-pressed="false">Sede Arenal</button>
+                    </div>
+
+                    <div class="filter-group">
+                        <label class="filter-group-label" for="areaFilter">Área académica:</label>
+                        <select id="areaFilter" class="area-select">
+                            <option value="all">Todas las áreas</option>
+                            <option value="ciencias-basicas">Ciencias básicas</option>
+                            <option value="matematicas">Matemáticas</option>
+                            <option value="humanidades">Humanidades y lengua castellana</option>
+                            <option value="ingles">Inglés</option>
+                            <option value="ciencias-sociales">Ciencias sociales</option>
+                            <option value="tecnologia">Tecnología e informática</option>
+                            <option value="artistica">Educación artística</option>
+                            <option value="educacion-fisica">Educación física</option>
+                            <option value="etica-religion">Ética, valores y religión</option>
+                            <option value="primaria">Primaria / multigrado</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section--tight">
+            <div class="container">
+                <div class="teachers-grid" id="teachersGrid"></div>
+
+                <div class="teachers-empty" id="teachersEmpty">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <h3>Información en preparación</h3>
+                    <p>
+                        Esta sección ya cuenta con la estructura y los filtros necesarios para publicar el
+                        directorio del personal docente. Los registros se incorporarán tan pronto la institución
+                        confirme los nombres, correos autorizados, sedes y áreas correspondientes.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="site-footer-mount"></div>
+
+    <script src="/js/layout.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/docentes.js"></script>
+</body>
+
+</html>
